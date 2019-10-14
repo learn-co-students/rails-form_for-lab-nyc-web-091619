@@ -1,8 +1,9 @@
 require 'rails_helper'
 
-describe SchoolClass do
+RSpec.describe SchoolClass, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
   before(:each) do
-    @school_class = SchoolClass.create!(title: "Computer Science", room_number: 5)
+    @school_class = SchoolClass.create!(title: "Dope", room_number: 123)
   end
 
   it 'can be created' do
